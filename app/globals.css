@@ -25,6 +25,12 @@ body {
   color: #111827;
 }
 
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -119,6 +125,18 @@ body::before {
 
 .hero-scene:hover .hero-gradient-overlay {
   opacity: 0.82;
+}
+
+@media (max-width: 640px) {
+  .hero-image {
+    filter: saturate(0.86) contrast(0.94) brightness(0.84) blur(0.6px);
+    transform: scale(1.01);
+  }
+
+  .hero-scene:hover .hero-image {
+    filter: saturate(1.02) contrast(1.02) brightness(0.94) blur(0);
+    transform: scale(1.006);
+  }
 }
 
 .reveal {
