@@ -25,7 +25,7 @@ export function Header() {
           : "border-white/10 bg-navy/72 backdrop-blur-md"
       }`}
     >
-      <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-6 px-5 py-4 md:h-[84px] md:gap-10 md:px-8">
+      <nav className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-5 px-5 py-4 md:h-[84px] md:gap-10 md:px-8">
         <Link href="#top" className="group flex shrink-0 items-center" aria-label="Rubicon Talent home">
           <Image
             src="/images/logo.png"
@@ -34,11 +34,12 @@ export function Header() {
             height={250}
             priority
             quality={100}
-            className="h-auto w-[140px] object-contain sm:w-[150px] md:w-[200px] xl:w-[220px]"
+            sizes="(max-width: 640px) 140px, (max-width: 1024px) 200px, 220px"
+            className="h-auto w-[136px] object-contain sm:w-[150px] md:w-[180px] xl:w-[220px]"
           />
         </Link>
 
-        <div className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center gap-5 lg:flex xl:gap-7">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -50,10 +51,10 @@ export function Header() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <Link
             href="tel:+85254159260"
-            className="rounded-xl border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-gold hover:text-gold"
+            className="whitespace-nowrap rounded-xl border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-gold hover:text-gold"
           >
             +852 54159260
           </Link>
@@ -90,10 +91,17 @@ export function Header() {
             ))}
             <Link
               href="#contact"
-              className="mt-2 rounded-xl bg-gold px-4 py-3 text-center text-sm font-semibold text-black"
+              className="mt-3 rounded-xl bg-gold px-4 py-3 text-center text-sm font-semibold text-black"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
+            </Link>
+            <Link
+              href="tel:+85254159260"
+              className="rounded-xl border border-white/15 px-4 py-3 text-center text-sm font-semibold text-white"
+              onClick={() => setIsOpen(false)}
+            >
+              +852 54159260
             </Link>
           </div>
         </div>

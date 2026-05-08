@@ -11,7 +11,7 @@ const serviceCards = [
 
 export function Services() {
   return (
-    <section className="texture-dark reveal-section py-24 text-white">
+    <section className="texture-dark reveal-section py-16 text-white md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-kicker">Executive Search Capabilities</p>
@@ -24,7 +24,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 md:gap-5 lg:grid-cols-3">
           {serviceCards.map(({ label, icon: Icon }) => (
             <article
               key={label}

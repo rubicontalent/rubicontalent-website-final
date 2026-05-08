@@ -6,8 +6,8 @@ const candidateBullets = ["Career Moves That Matter", "Confidential Opportunitie
 
 export function CandidateSection() {
   return (
-    <section id="candidates" className="texture-section reveal-section py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-8 lg:grid-cols-2">
+    <section id="candidates" className="texture-section reveal-section py-16 md:py-24">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-5 md:gap-12 md:px-8 lg:grid-cols-2">
         <div>
           <p className="section-kicker">For Candidates</p>
           <h2 className="section-title">Bold career moves, handled discreetly.</h2>
@@ -37,7 +37,7 @@ export function CandidateSection() {
             src="/images/candidate-journey.jpg"
             alt="Candidate career journey"
             width={1600}
-            height={900}
+            height={1067}
             quality={100}
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="h-auto w-full rounded-xl object-contain"

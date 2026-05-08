@@ -4,7 +4,7 @@ import { jobs } from "@/components/site-data";
 
 export function FeaturedJobs() {
   return (
-    <section id="jobs" className="reveal-section bg-white py-20 md:py-28">
+    <section id="jobs" className="reveal-section bg-white py-16 md:py-28">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -20,9 +20,9 @@ export function FeaturedJobs() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {jobs.map((job) => (
-            <article key={job.title} className="group flex min-h-[280px] flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.03] hover:border-gold/40 hover:shadow-glow">
+            <article key={job.title} className="group flex min-h-[250px] flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.03] hover:border-gold/40 hover:shadow-glow md:min-h-[280px]">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-gold">
                 <span className="text-sm font-bold">{job.title.slice(0, 2).toUpperCase()}</span>
               </div>

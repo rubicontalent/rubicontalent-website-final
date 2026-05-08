@@ -41,7 +41,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="texture-dark reveal-section py-20 text-white md:py-28">
+    <section id="contact" className="texture-dark reveal-section py-16 text-white md:py-28">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-[.9fr_1.1fr]">
         <div>
           <p className="section-kicker">Contact</p>
@@ -154,13 +154,13 @@ export function ContactForm() {
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <button
               type="submit"
-              className="gold-glow inline-flex min-h-12 items-center justify-center rounded-xl bg-gold px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#d9bd7b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+              className="gold-glow inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-gold px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#d9bd7b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:w-auto"
             >
               Send Enquiry
             </button>
             <Link
               href="https://wa.me/85254159260"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-ink transition hover:border-gold hover:bg-slate-50"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-ink transition hover:border-gold hover:bg-slate-50 sm:w-auto"
             >
               WhatsApp Us
             </Link>

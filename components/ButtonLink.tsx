@@ -28,7 +28,7 @@ export function ButtonLink({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-12 items-center justify-center gap-2 text-sm font-semibold transition duration-300 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${styles[variant]} ${className}`}
+      className={`inline-flex min-h-12 w-full items-center justify-center gap-2 text-sm font-semibold transition duration-300 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:w-auto ${styles[variant]} ${className}`}
     >
       <span>{children}</span>
       <ArrowRight className="h-4 w-4" aria-hidden="true" />

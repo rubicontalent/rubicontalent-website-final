@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <section id="about" className="texture-section reveal-section py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-8 lg:grid-cols-2">
+    <section id="about" className="texture-section reveal-section py-16 md:py-24">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-5 md:gap-12 md:px-8 lg:grid-cols-2">
         <div>
           <p className="section-kicker">About Rubicon Talent</p>
           <h2 className="section-title">Guided by Purpose. Driven by Impact.</h2>
@@ -21,7 +21,7 @@ export function About() {
             ))}
           </div>
         </div>
-        <div className="premium-image-card min-h-[470px] border-gold/20 bg-navy p-8 lg:min-h-[540px]">
+        <div className="premium-image-card min-h-[340px] border-gold/20 bg-navy p-6 md:min-h-[470px] md:p-8 lg:min-h-[540px]">
           <Image
             src="/images/background-texture.jpg"
             alt="Rubicon Talent strategic mission texture"
@@ -31,8 +31,8 @@ export function About() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/72 to-black/65" />
-          <div className="relative flex h-full min-h-[400px] flex-col justify-end">
-            <p className="max-w-md text-3xl font-semibold leading-tight text-white md:text-4xl">
+          <div className="relative flex h-full min-h-[292px] flex-col justify-end md:min-h-[400px]">
+            <p className="max-w-md text-2xl font-semibold leading-tight text-white md:text-4xl">
               Decisive moves deserve disciplined search.
             </p>
             <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">

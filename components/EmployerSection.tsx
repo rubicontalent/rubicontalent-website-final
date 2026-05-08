@@ -6,14 +6,14 @@ const employerBullets = ["Executive Search", "AI Talent Mapping", "Strategic Hir
 
 export function EmployerSection() {
   return (
-    <section id="employers" className="texture-dark reveal-section py-24 text-white">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-8 lg:grid-cols-2">
+    <section id="employers" className="texture-dark reveal-section py-16 text-white md:py-24">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-5 md:gap-12 md:px-8 lg:grid-cols-2">
         <div className="rounded-2xl border border-white/10 bg-[#071421] p-2 shadow-premium transition duration-300 hover:scale-[1.03] hover:shadow-glow">
           <Image
             src="/images/employer-services.jpg"
             alt="Executive employer search services"
             width={1600}
-            height={900}
+            height={1067}
             quality={100}
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="h-auto w-full rounded-xl object-contain"

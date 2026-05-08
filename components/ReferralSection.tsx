@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function ReferralSection() {
   return (
-    <section id="referral" className="texture-dark reveal-section py-24 text-white">
+    <section id="referral" className="texture-dark reveal-section py-16 text-white md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-kicker">Referral Network</p>
@@ -26,7 +26,7 @@ export function ReferralSection() {
             src="/images/referral-network.jpg"
             alt="Professional referral network"
             width={1600}
-            height={900}
+            height={1067}
             quality={100}
             sizes="100vw"
             className="h-auto w-full rounded-xl object-contain"
