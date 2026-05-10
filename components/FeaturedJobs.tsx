@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, WalletCards, Clock3 } from "lucide-react";
+import { BriefcaseBusiness, Building2, MapPin } from "lucide-react";
 import { jobs } from "@/components/site-data";
 
 export function FeaturedJobs() {
@@ -8,14 +8,17 @@ export function FeaturedJobs() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="section-kicker">Featured Jobs</p>
-            <h2 className="section-title">Selected current searches.</h2>
+            <p className="section-kicker">Typical Searches</p>
+            <h2 className="section-title">Role areas we commonly cover.</h2>
             <p className="section-copy">
-              Selected searches across commercial, corporate, technology, finance, and operations
-              roles in Hong Kong.
+              Examples of mandates Rubicon Talent can support across commercial, corporate,
+              technology, finance, and operations functions in Hong Kong.
             </p>
           </div>
-          <Link href="#contact" className="text-sm font-semibold text-ink underline decoration-gold decoration-2 underline-offset-8">
+          <Link
+            href="mailto:info@rubicontalent.net?subject=Speculative%20CV%20-%20Rubicon%20Talent"
+            className="text-sm font-semibold text-ink underline decoration-gold decoration-2 underline-offset-8"
+          >
             Send a speculative CV
           </Link>
         </div>
@@ -33,19 +36,19 @@ export function FeaturedJobs() {
                   {job.location}
                 </p>
                 <p className="flex items-center gap-2">
-                  <WalletCards className="h-4 w-4 text-gold" aria-hidden="true" />
+                  <Building2 className="h-4 w-4 text-gold" aria-hidden="true" />
                   {job.salary}
                 </p>
                 <p className="flex items-center gap-2">
-                  <Clock3 className="h-4 w-4 text-gold" aria-hidden="true" />
+                  <BriefcaseBusiness className="h-4 w-4 text-gold" aria-hidden="true" />
                   {job.type}
                 </p>
               </div>
               <Link
-                href={`mailto:info@rubicontalent.net?subject=Application%20for%20${encodeURIComponent(job.title)}`}
+                href={`mailto:info@rubicontalent.net?subject=Talent%20Coverage%20Enquiry%20-%20${encodeURIComponent(job.title)}`}
                 className="mt-auto inline-flex min-h-11 items-center justify-center rounded-xl bg-navy px-4 py-3 text-sm font-semibold text-white transition group-hover:bg-gold group-hover:text-black"
               >
-                Apply Now
+                Discuss This Area
               </Link>
             </article>
           ))}

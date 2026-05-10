@@ -40,8 +40,11 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
-            <ButtonLink href="#employers">Hire Talent</ButtonLink>
-            <ButtonLink href="#candidates" variant="secondary">
+            <ButtonLink href="#contact">Hire Talent</ButtonLink>
+            <ButtonLink
+              href="mailto:info@rubicontalent.net?subject=CV%20Submission%20-%20Rubicon%20Talent"
+              variant="secondary"
+            >
               Submit CV
             </ButtonLink>
           </div>

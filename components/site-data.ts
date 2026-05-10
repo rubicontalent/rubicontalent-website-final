@@ -16,7 +16,7 @@ import {
 export const navItems = [
   { label: "Employers", href: "#employers" },
   { label: "Candidates", href: "#candidates" },
-  { label: "Jobs", href: "#jobs" },
+  { label: "Searches", href: "#jobs" },
   { label: "Referral", href: "#referral" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" }
@@ -86,32 +86,32 @@ export const jobs = [
   {
     title: "Sales Manager",
     location: "Hong Kong",
-    salary: "Competitive package",
-    type: "Permanent"
+    salary: "Commercial leadership",
+    type: "Revenue growth"
   },
   {
     title: "Business Development Manager",
     location: "Hong Kong",
-    salary: "Base + commission",
-    type: "Permanent"
+    salary: "Client acquisition",
+    type: "Market expansion"
   },
   {
     title: "HR & Admin Officer",
     location: "Kowloon / Hybrid",
-    salary: "Market aligned",
-    type: "Permanent"
+    salary: "Corporate operations",
+    type: "People support"
   },
   {
     title: "IT Support Engineer",
     location: "Hong Kong Island",
-    salary: "Negotiable",
-    type: "Permanent"
+    salary: "Technology support",
+    type: "Infrastructure"
   },
   {
     title: "Finance Manager",
     location: "Hong Kong",
-    salary: "Senior package",
-    type: "Permanent"
+    salary: "Finance leadership",
+    type: "Reporting control"
   }
 ];
 

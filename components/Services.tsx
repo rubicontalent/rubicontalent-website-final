@@ -1,12 +1,42 @@
 import { BarChart3, Brain, BriefcaseBusiness, Network, Search, Users } from "lucide-react";
 
 const serviceCards = [
-  { label: "Executive Search", icon: Search },
-  { label: "Contingency Recruitment", icon: Users },
-  { label: "Market Mapping", icon: BarChart3 },
-  { label: "AI Sourcing", icon: Brain },
-  { label: "Talent Pipeline", icon: Network },
-  { label: "Career Consultation", icon: BriefcaseBusiness }
+  {
+    label: "Executive Search",
+    description:
+      "Discreet outreach for senior, specialist, and business-critical appointments where trust and timing matter.",
+    icon: Search
+  },
+  {
+    label: "Contingency Recruitment",
+    description:
+      "Focused shortlist delivery for permanent hires where the brief is clear and speed is commercially important.",
+    icon: Users
+  },
+  {
+    label: "Market Mapping",
+    description:
+      "Practical intelligence on target companies, talent availability, compensation signals, and competitor teams.",
+    icon: BarChart3
+  },
+  {
+    label: "AI Sourcing",
+    description:
+      "AI-assisted search workflows that expand reach while keeping screening, judgement, and candidate care human.",
+    icon: Brain
+  },
+  {
+    label: "Talent Pipeline",
+    description:
+      "Longer-term engagement with high-potential candidates before a role becomes urgent or publicly visible.",
+    icon: Network
+  },
+  {
+    label: "Career Consultation",
+    description:
+      "Confidential guidance for candidates weighing serious moves, market positioning, and interview readiness.",
+    icon: BriefcaseBusiness
+  }
 ];
 
 export function Services() {
@@ -25,7 +55,7 @@ export function Services() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 md:gap-5 lg:grid-cols-3">
-          {serviceCards.map(({ label, icon: Icon }) => (
+          {serviceCards.map(({ label, description, icon: Icon }) => (
             <article
               key={label}
               className="group rounded-2xl border border-white/10 bg-white/[0.05] p-6 shadow-premium backdrop-blur transition duration-300 hover:scale-[1.03] hover:border-gold/50 hover:shadow-glow"
@@ -35,8 +65,7 @@ export function Services() {
               </div>
               <h3 className="mt-6 text-xl font-semibold text-white">{label}</h3>
               <p className="mt-3 text-sm leading-7 text-slate-300">
-                Focused support for the moments where precision, confidentiality, and timing
-                matter.
+                {description}
               </p>
             </article>
           ))}

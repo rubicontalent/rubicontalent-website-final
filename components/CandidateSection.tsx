@@ -26,7 +26,10 @@ export function CandidateSection() {
             ))}
           </div>
           <div className="mt-8">
-            <ButtonLink href="#contact" variant="dark">
+            <ButtonLink
+              href="mailto:info@rubicontalent.net?subject=CV%20Submission%20-%20Rubicon%20Talent"
+              variant="dark"
+            >
               Submit Your CV
             </ButtonLink>
           </div>

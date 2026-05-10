@@ -49,8 +49,7 @@ export function ContactForm() {
             Start the conversation.
           </h2>
           <p className="mt-5 max-w-3xl text-base leading-8 text-slate-300 md:text-lg">
-            Send a confidential role brief, submit your CV, refer a candidate, or request a
-            focused view of the Hong Kong talent market.
+            Tell us what role you are hiring for or what career move you are considering.
           </p>
 
           <div className="mt-8 space-y-4 rounded-2xl border border-white/10 bg-white/[0.06] p-6 text-white shadow-premium backdrop-blur">
@@ -77,6 +76,9 @@ export function ContactForm() {
                 WhatsApp Rubicon Talent
               </Link>
             </div>
+            <p className="border-t border-white/10 pt-4 text-xs leading-6 text-slate-400">
+              All enquiries are handled confidentially.
+            </p>
           </div>
         </div>
 
