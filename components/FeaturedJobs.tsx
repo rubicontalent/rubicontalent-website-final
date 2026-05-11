@@ -1,6 +1,21 @@
 import Link from "next/link";
-import { BriefcaseBusiness, Building2, MapPin } from "lucide-react";
-import { jobs } from "@/components/site-data";
+import { Award, BriefcaseBusiness } from "lucide-react";
+
+const coverageAreas = [
+  "Finance & Accounting",
+  "Technology",
+  "Commercial & Sales",
+  "Supply Chain & Operations",
+  "HR & Legal",
+  "Executive Leadership"
+];
+
+const representativeSearches = [
+  "Regional Finance Manager",
+  "APAC Sales Director",
+  "AI Engineer",
+  "Supply Chain Lead"
+];
 
 export function FeaturedJobs() {
   return (
@@ -8,11 +23,11 @@ export function FeaturedJobs() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="section-kicker">Typical Searches</p>
-            <h2 className="section-title">Role areas we commonly cover.</h2>
+            <p className="section-kicker">Typical Search Coverage</p>
+            <h2 className="section-title">Mandates handled with discretion.</h2>
             <p className="section-copy">
-              Examples of mandates Rubicon Talent can support across commercial, corporate,
-              technology, finance, and operations functions in Hong Kong.
+              Representative coverage areas and anonymous-style search examples across Hong Kong
+              and regional roles.
             </p>
           </div>
           <Link
@@ -23,35 +38,32 @@ export function FeaturedJobs() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
-          {jobs.map((job) => (
-            <article key={job.title} className="group flex min-h-[250px] flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.03] hover:border-gold/40 hover:shadow-glow md:min-h-[280px]">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-gold">
-                <span className="text-sm font-bold">{job.title.slice(0, 2).toUpperCase()}</span>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {coverageAreas.map((area) => (
+            <article key={area} className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.03] hover:border-gold/40 hover:shadow-glow">
+              <div className="grid h-11 w-11 place-items-center rounded-xl bg-navy text-gold">
+                <BriefcaseBusiness className="h-5 w-5" aria-hidden="true" />
               </div>
-              <h3 className="mt-6 text-xl font-semibold leading-snug text-ink">{job.title}</h3>
-              <div className="mt-5 space-y-3 text-sm text-slate-600">
-                <p className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-gold" aria-hidden="true" />
-                  {job.location}
-                </p>
-                <p className="flex items-center gap-2">
-                  <Building2 className="h-4 w-4 text-gold" aria-hidden="true" />
-                  {job.salary}
-                </p>
-                <p className="flex items-center gap-2">
-                  <BriefcaseBusiness className="h-4 w-4 text-gold" aria-hidden="true" />
-                  {job.type}
-                </p>
-              </div>
-              <Link
-                href={`mailto:info@rubicontalent.net?subject=Talent%20Coverage%20Enquiry%20-%20${encodeURIComponent(job.title)}`}
-                className="mt-auto inline-flex min-h-11 items-center justify-center rounded-xl bg-navy px-4 py-3 text-sm font-semibold text-white transition group-hover:bg-gold group-hover:text-black"
-              >
-                Discuss This Area
-              </Link>
+              <h3 className="mt-6 text-xl font-semibold leading-snug text-ink">{area}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Search support across specialist, manager, and leadership appointments.
+              </p>
             </article>
           ))}
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-gold/20 bg-navy p-5 text-white shadow-premium md:p-7">
+          <div className="flex items-center gap-3">
+            <Award className="h-5 w-5 text-gold" aria-hidden="true" />
+            <h3 className="text-lg font-semibold">Representative anonymous searches</h3>
+          </div>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {representativeSearches.map((search) => (
+              <div key={search} className="rounded-xl border border-white/10 bg-white/[0.06] p-4 text-sm font-semibold">
+                {search}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

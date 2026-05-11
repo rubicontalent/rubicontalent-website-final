@@ -26,7 +26,7 @@ export function About() {
             src="/images/background-texture.jpg"
             alt="Rubicon Talent strategic mission texture"
             fill
-            quality={100}
+            quality={88}
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
           />

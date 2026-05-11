@@ -27,7 +27,7 @@ export function ReferralSection() {
             alt="Professional referral network"
             width={1600}
             height={1067}
-            quality={100}
+            quality={88}
             sizes="100vw"
             className="h-auto w-full rounded-xl object-contain"
           />

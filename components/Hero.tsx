@@ -9,7 +9,7 @@ export function Hero() {
         alt="Hong Kong executive search visual for Rubicon Talent"
         fill
         priority
-        quality={100}
+        quality={90}
         sizes="100vw"
         className="hero-image object-cover"
         style={{ objectPosition: "72% center" }}
