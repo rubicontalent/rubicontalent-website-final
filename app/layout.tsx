@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -15,6 +16,11 @@ export const metadata: Metadata = {
   description:
     "Boutique Hong Kong executive search and recruitment partner for decisive hiring, confidential career moves, market mapping, and AI-assisted talent sourcing.",
   keywords: [
+    "Executive Search Hong Kong",
+    "Headhunter Hong Kong",
+    "Boutique Executive Search",
+    "AI Recruitment Hong Kong",
+    "Executive Recruitment Firm Hong Kong",
     "Rubicon Talent",
     "Hong Kong recruitment",
     "headhunting Hong Kong",
@@ -95,6 +101,10 @@ const structuredData = {
   ]
 };
 
+const gaId = process.env.NEXT_PUBLIC_GA_ID;
+const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const linkedInPartnerId = process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID;
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -107,6 +117,53 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        {gaId ? (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        ) : null}
+        {metaPixelId ? (
+          <Script id="meta-pixel" strategy="afterInteractive">
+            {`
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '${metaPixelId}');
+              fbq('track', 'PageView');
+            `}
+          </Script>
+        ) : null}
+        {linkedInPartnerId ? (
+          <Script id="linkedin-insight" strategy="afterInteractive">
+            {`
+              _linkedin_partner_id = "${linkedInPartnerId}";
+              window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+              window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+              (function(l) {
+                if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+                window.lintrk.q=[]}
+                var s = document.getElementsByTagName("script")[0];
+                var b = document.createElement("script");
+                b.type = "text/javascript"; b.async = true;
+                b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+                s.parentNode.insertBefore(b, s);
+              })(window.lintrk);
+            `}
+          </Script>
+        ) : null}
         {children}
       </body>
     </html>
