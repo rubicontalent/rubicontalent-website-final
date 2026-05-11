@@ -73,11 +73,23 @@ Important: do **not** delete or change Google Workspace email DNS records. Keep 
 
 ## Forms
 
-The contact form currently opens the visitor's email client with a prefilled message to:
+The contact form is configured for Netlify Forms using the form name:
 
-`info@rubicontalent.net`
+`rubicon-talent-contact`
 
-The CV upload field is a placeholder until a backend, Google Sheet, CRM, or form service is connected. Visitors should attach their CV manually to the email before sending.
+Submissions will appear in Netlify once the site is deployed there. WhatsApp and email links remain available as secondary contact routes.
+
+## Analytics Prep
+
+Optional analytics integrations are prepared through environment variables:
+
+```bash
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_META_PIXEL_ID=000000000000000
+NEXT_PUBLIC_LINKEDIN_PARTNER_ID=0000000
+```
+
+Only set these when the relevant accounts are ready.
 
 ## Structure
 
