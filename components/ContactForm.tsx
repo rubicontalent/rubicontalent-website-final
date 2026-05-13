@@ -57,10 +57,10 @@ export function ContactForm() {
             Start a confidential conversation.
           </h2>
           <p className="mt-5 max-w-3xl text-base leading-8 text-slate-300 md:text-lg">
-            Tell us what role you are hiring for or what career move you are considering.
+            Tell us about the role, team, or career move you would like to discuss.
           </p>
 
-          <div className="mt-8 space-y-4 rounded-2xl border border-white/10 bg-white/[0.06] p-6 text-white shadow-premium backdrop-blur">
+          <div className="mt-8 space-y-4 rounded-lg border border-white/10 bg-white/[0.055] p-6 text-white shadow-premium backdrop-blur">
             <h3 className="text-xl font-semibold">Rubicon Talent</h3>
             <p className="text-sm text-gold">
               Rubicon Talent Limited{" \u00B7 "}{"\u6C7A\u6E21\u4EBA\u624D\u6709\u9650\u516C\u53F8"}
@@ -97,7 +97,7 @@ export function ContactForm() {
           data-netlify="true"
           netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
-          className="rounded-2xl border border-white/10 bg-white/[0.08] p-5 text-white shadow-premium backdrop-blur-xl md:p-8"
+          className="rounded-lg border border-white/10 bg-white/[0.075] p-5 text-white shadow-premium backdrop-blur-xl md:p-8"
         >
           <input type="hidden" name="form-name" value="rubicon-talent-contact" />
           <p className="hidden">
@@ -107,14 +107,14 @@ export function ContactForm() {
           </p>
 
           {status === "success" ? (
-            <div className="rounded-2xl border border-gold/30 bg-gold/10 p-6">
+            <div className="rounded-lg border border-gold/30 bg-gold/10 p-6">
               <h3 className="text-2xl font-semibold text-white">Thank you.</h3>
               <p className="mt-3 leading-7 text-slate-200">
                 A consultant will contact you within 24 hours.
               </p>
               <Link
                 href="https://wa.me/85254159260"
-                className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-gold sm:w-auto"
+                className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-gold sm:w-auto"
               >
                 WhatsApp as a secondary option
               </Link>
@@ -192,7 +192,7 @@ export function ContactForm() {
               </div>
 
               {status === "error" ? (
-                <p className="mt-4 rounded-xl border border-red-300/30 bg-red-500/10 p-3 text-sm text-red-100">
+                <p className="mt-4 rounded-lg border border-red-300/30 bg-red-500/10 p-3 text-sm text-red-100">
                   Something went wrong. Please email info@rubicontalent.net or contact us on WhatsApp.
                 </p>
               ) : null}
@@ -201,13 +201,13 @@ export function ContactForm() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="gold-glow inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-gold px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#d9bd7b] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
+                  className="gold-glow inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-gold px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#d9bd7b] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
                 >
                   {status === "submitting" ? "Submitting..." : "Send Enquiry"}
                 </button>
                 <Link
                   href="https://wa.me/85254159260"
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-gold sm:w-auto"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-gold sm:w-auto"
                 >
                   WhatsApp Us
                 </Link>

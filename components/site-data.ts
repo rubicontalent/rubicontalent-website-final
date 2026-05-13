@@ -48,9 +48,9 @@ export const employerServices = [
     icon: Network
   },
   {
-    title: "AI-Assisted Candidate Sourcing",
+    title: "Research-Led Candidate Sourcing",
     description:
-      "Structured search workflows shaped by data, outreach precision, and judgement.",
+      "Structured sourcing shaped by market knowledge, outreach precision, and judgement.",
     icon: Sparkles
   }
 ];
@@ -140,7 +140,7 @@ export const iconServices = [
   "Executive Search",
   "Contingency Recruitment",
   "Market Mapping",
-  "AI Sourcing",
+  "Research-Led Sourcing",
   "Talent Pipeline",
   "Career Consultation"
 ];

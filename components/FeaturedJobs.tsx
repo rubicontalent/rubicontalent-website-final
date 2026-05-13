@@ -6,15 +6,15 @@ const coverageAreas = [
   "Technology",
   "Commercial & Sales",
   "Supply Chain & Operations",
-  "HR & Legal",
+  "Luxury Retail & Operations",
   "Executive Leadership"
 ];
 
 const representativeSearches = [
   "Regional Finance Manager",
   "APAC Sales Director",
-  "AI Engineer",
-  "Supply Chain Lead"
+  "Technology Lead",
+  "Operations Director"
 ];
 
 export function FeaturedJobs() {
@@ -26,8 +26,8 @@ export function FeaturedJobs() {
             <p className="section-kicker">Typical Search Coverage</p>
             <h2 className="section-title">Mandates handled with discretion.</h2>
             <p className="section-copy">
-              Representative coverage areas and anonymous-style search examples across Hong Kong
-              and regional roles.
+              Representative coverage areas and anonymised search examples across Hong Kong,
+              Greater China, and APAC roles.
             </p>
           </div>
           <Link
@@ -38,26 +38,26 @@ export function FeaturedJobs() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 md:mt-10 md:gap-4 lg:grid-cols-3">
           {coverageAreas.map((area) => (
-            <article key={area} className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.03] hover:border-gold/40 hover:shadow-glow">
-              <div className="grid h-11 w-11 place-items-center rounded-xl bg-navy text-gold">
+            <article key={area} className="mobile-tight-card group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:border-gold/35">
+              <div className="grid h-11 w-11 place-items-center rounded-lg bg-navy text-gold">
                 <BriefcaseBusiness className="h-5 w-5" aria-hidden="true" />
               </div>
-              <h3 className="mt-6 text-xl font-semibold leading-snug text-ink">{area}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+              <h3 className="mt-4 text-lg font-semibold leading-snug text-ink md:mt-6 md:text-xl">{area}</h3>
+              <p className="mt-2 hidden text-sm leading-7 text-slate-600 sm:block md:mt-3">
                 Search support across specialist, manager, and leadership appointments.
               </p>
             </article>
           ))}
         </div>
 
-        <div className="mt-8 rounded-2xl border border-gold/20 bg-navy p-5 text-white shadow-premium md:p-7">
+        <div className="mt-6 rounded-lg border border-gold/20 bg-navy p-5 text-white shadow-premium md:mt-8 md:p-7">
           <div className="flex items-center gap-3">
             <Award className="h-5 w-5 text-gold" aria-hidden="true" />
             <h3 className="text-lg font-semibold">Representative anonymous searches</h3>
           </div>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-4 grid gap-2 sm:grid-cols-2 md:mt-5 md:gap-3 lg:grid-cols-4">
             {representativeSearches.map((search) => (
               <div key={search} className="rounded-xl border border-white/10 bg-white/[0.06] p-4 text-sm font-semibold">
                 {search}

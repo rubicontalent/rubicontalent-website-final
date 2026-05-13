@@ -1,10 +1,10 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 
 const comparisons = [
-  ["CV Spam", "Precision Search"],
-  ["Reactive", "Strategic Market Mapping"],
-  ["Volume Outreach", "Relationship-Led Search"],
-  ["Generic Recruiting", "AI-Assisted Executive Search"]
+  ["CV Forwarding", "Considered Shortlists"],
+  ["Reactive Hiring", "Market-Led Advice"],
+  ["Volume Outreach", "Discreet Introductions"],
+  ["Generic Recruiting", "Founder-Led Search"]
 ];
 
 export function WhyRubicon() {
@@ -14,15 +14,15 @@ export function WhyRubicon() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-kicker">Why Rubicon</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Executive search with sharper intent.
+            Search with judgement and restraint.
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-slate-300 md:text-lg">
-            Rubicon is designed for focused, confidential mandates where judgement matters more
-            than volume.
+            Rubicon is designed for focused, confidential mandates where trust matters more than
+            volume.
           </p>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] shadow-premium backdrop-blur">
+        <div className="mt-10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.045] shadow-premium backdrop-blur">
           <div className="grid grid-cols-2 border-b border-white/10 bg-white/[0.06] text-sm font-semibold uppercase tracking-[0.18em] text-gold">
             <div className="p-4 md:p-5">Traditional Recruiters</div>
             <div className="border-l border-white/10 p-4 md:p-5">Rubicon</div>

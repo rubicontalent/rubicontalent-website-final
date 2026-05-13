@@ -54,20 +54,20 @@ export function Header() {
         <div className="hidden items-center gap-3 xl:flex">
           <Link
             href="tel:+85254159260"
-            className="whitespace-nowrap rounded-xl border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-gold hover:text-gold"
+            className="whitespace-nowrap rounded-lg border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-gold hover:text-gold"
           >
             +852 54159260
           </Link>
           <Link
             href="#contact"
-            className="gold-glow rounded-xl bg-gold px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#d9bd7b]"
+            className="gold-glow rounded-lg bg-gold px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#d9bd7b]"
           >
             Contact Us
           </Link>
         </div>
 
         <button
-          className="grid h-11 w-11 place-items-center rounded-xl border border-white/20 text-white lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-lg border border-white/20 text-white lg:hidden"
           type="button"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           onClick={() => setIsOpen((value) => !value)}
@@ -83,7 +83,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-xl px-3 py-3 text-base font-medium text-slate-200 hover:bg-white/10"
+                className="rounded-lg px-3 py-3 text-base font-medium text-slate-200 hover:bg-white/10"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
@@ -91,14 +91,14 @@ export function Header() {
             ))}
             <Link
               href="#contact"
-              className="mt-3 rounded-xl bg-gold px-4 py-3 text-center text-sm font-semibold text-black"
+              className="mt-3 rounded-lg bg-gold px-4 py-3 text-center text-sm font-semibold text-black"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
             </Link>
             <Link
               href="tel:+85254159260"
-              className="rounded-xl border border-white/15 px-4 py-3 text-center text-sm font-semibold text-white"
+              className="rounded-lg border border-white/15 px-4 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setIsOpen(false)}
             >
               +852 54159260

@@ -8,7 +8,7 @@ const steps = [
   },
   {
     title: "Talent Identification",
-    description: "Build a focused list of high-fit candidates using research and AI-assisted sourcing.",
+    description: "Build a focused list of high-fit candidates through research and referrals.",
     icon: Search
   },
   {
@@ -34,28 +34,28 @@ export function ProcessSection() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-kicker">Our Search Process</p>
-          <h2 className="section-title">A disciplined route from market insight to appointment.</h2>
+          <h2 className="section-title">A measured route from brief to appointment.</h2>
           <p className="section-copy mx-auto">
-            A clear executive-search workflow designed for confidential, high-conviction hiring.
+            A clear search workflow for confidential, high-conviction hiring.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-5">
+        <div className="mt-8 grid gap-3 md:mt-12 md:gap-4 lg:grid-cols-5">
           {steps.map(({ title, description, icon: Icon }, index) => (
             <article
               key={title}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.03] hover:border-gold/40 hover:shadow-glow"
+              className="mobile-tight-card rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:border-gold/35"
             >
               <div className="flex items-center justify-between gap-4">
-                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-navy text-gold">
+                <div className="grid h-12 w-12 place-items-center rounded-lg bg-navy text-gold">
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </div>
                 <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">
                   0{index + 1}
                 </span>
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-ink">{title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
+              <h3 className="mt-4 text-lg font-semibold text-ink md:mt-6">{title}</h3>
+              <p className="mt-2 hidden text-sm leading-7 text-slate-600 sm:block md:mt-3">{description}</p>
             </article>
           ))}
         </div>
