@@ -15,8 +15,8 @@ const config: Config = {
         mist: "#EEF2F6"
       },
       boxShadow: {
-        premium: "0 24px 70px rgba(8, 11, 18, 0.18)",
-        glow: "0 0 34px rgba(200, 169, 106, 0.34)"
+        premium: "0 18px 46px rgba(8, 11, 18, 0.14)",
+        glow: "0 12px 28px rgba(8, 11, 18, 0.16)"
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Arial", "sans-serif"]
