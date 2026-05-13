@@ -14,24 +14,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rubicontalent.net"),
   title: "Rubicon Talent Limited | Executive Search & Headhunting in Hong Kong",
   description:
-    "Boutique Hong Kong executive search and recruitment partner for decisive hiring, confidential career moves, market mapping, and AI-assisted talent sourcing.",
+    "Founder-led Hong Kong executive search partner for confidential hiring, APAC talent moves, market mapping, and senior career advice.",
   keywords: [
     "Executive Search Hong Kong",
     "Headhunter Hong Kong",
     "Boutique Executive Search",
-    "AI Recruitment Hong Kong",
+    "APAC executive search",
     "Executive Recruitment Firm Hong Kong",
     "Rubicon Talent",
     "Hong Kong recruitment",
     "headhunting Hong Kong",
-    "AI recruitment",
+    "Hong Kong headhunter",
     "executive search",
     "talent search"
   ],
   openGraph: {
     title: "Rubicon Talent Limited | Executive Search & Headhunting in Hong Kong",
     description:
-      "Boutique Hong Kong executive search and recruitment partner for decisive hiring, confidential career moves, market mapping, and AI-assisted talent sourcing.",
+      "Founder-led Hong Kong executive search partner for confidential hiring, APAC talent moves, market mapping, and senior career advice.",
     url: "https://rubicontalent.net",
     siteName: "Rubicon Talent",
     locale: "en_HK",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rubicon Talent Limited | Executive Search & Headhunting in Hong Kong",
     description:
-      "Boutique Hong Kong executive search and recruitment partner for decisive hiring, confidential career moves, market mapping, and AI-assisted talent sourcing.",
+      "Founder-led Hong Kong executive search partner for confidential hiring, APAC talent moves, market mapping, and senior career advice.",
     images: ["/images/hero.jpg"]
   },
   alternates: {
@@ -96,7 +96,7 @@ const structuredData = {
     "Recruitment",
     "Headhunting",
     "Market mapping",
-    "AI-assisted sourcing",
+    "APAC talent mapping",
     "Career consultation"
   ]
 };

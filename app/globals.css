@@ -38,8 +38,7 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 18% 12%, rgba(200, 169, 106, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(11, 28, 44, 0.72), rgba(8, 11, 18, 0.86));
+    linear-gradient(135deg, rgba(11, 28, 44, 0.72), rgba(8, 11, 18, 0.88));
 }
 
 ::selection {
@@ -61,13 +60,11 @@ body::before {
 .glass-panel {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(246, 248, 251, 0.9));
   border: 1px solid rgba(200, 169, 106, 0.2);
-  box-shadow: 0 22px 70px rgba(8, 11, 18, 0.12);
+  box-shadow: 0 18px 46px rgba(8, 11, 18, 0.1);
 }
 
 .dark-radial {
   background:
-    radial-gradient(circle at 18% 20%, rgba(200, 168, 90, 0.2), transparent 28%),
-    radial-gradient(circle at 80% 0%, rgba(76, 104, 145, 0.22), transparent 36%),
     linear-gradient(135deg, #080b12 0%, #0c182a 52%, #111827 100%);
 }
 
@@ -94,24 +91,25 @@ body::before {
 }
 
 .gold-glow:hover {
-  box-shadow: 0 0 34px rgba(200, 169, 106, 0.34);
+  box-shadow: 0 12px 26px rgba(8, 11, 18, 0.16);
 }
 
 .premium-image-card {
-  @apply relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.05] shadow-premium transition duration-300 hover:scale-[1.03] hover:shadow-glow;
+  @apply relative overflow-hidden rounded-lg border border-white/10 bg-white/[0.05] shadow-premium transition duration-300 hover:border-gold/35;
 }
 
 .hero-image {
-  filter: saturate(0.78) contrast(0.9) brightness(0.82) blur(1.4px);
-  transform: scale(1.018);
+  object-position: 72% center;
+  filter: saturate(0.74) contrast(0.9) brightness(0.78) blur(0.9px);
+  transform: scale(1.012);
   transition:
     filter 900ms ease,
     transform 1200ms ease;
 }
 
 .hero-scene:hover .hero-image {
-  filter: saturate(1.12) contrast(1.08) brightness(0.98) blur(0);
-  transform: scale(1.006);
+  filter: saturate(0.82) contrast(0.94) brightness(0.82) blur(0.6px);
+  transform: scale(1.008);
 }
 
 .hero-dark-overlay,
@@ -120,22 +118,58 @@ body::before {
 }
 
 .hero-scene:hover .hero-dark-overlay {
-  opacity: 0.46;
+  opacity: 0.5;
 }
 
 .hero-scene:hover .hero-gradient-overlay {
-  opacity: 0.82;
+  opacity: 0.9;
 }
 
 @media (max-width: 640px) {
+  body {
+    padding-bottom: 94px;
+  }
+
+  .section-kicker {
+    letter-spacing: 0.18em;
+  }
+
+  .section-title {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+
+  .section-copy {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .reveal-section {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+
   .hero-image {
-    filter: saturate(0.86) contrast(0.94) brightness(0.84) blur(0.6px);
-    transform: scale(1.01);
+    object-position: 62% center;
+    filter: saturate(0.78) contrast(0.92) brightness(0.8) blur(0.7px);
+    transform: scale(1.024);
   }
 
   .hero-scene:hover .hero-image {
-    filter: saturate(1.02) contrast(1.02) brightness(0.94) blur(0);
-    transform: scale(1.006);
+    filter: saturate(0.82) contrast(0.95) brightness(0.84) blur(0.5px);
+    transform: scale(1.02);
+  }
+
+  .mobile-editorial-image img {
+    height: 19rem;
+    object-fit: cover;
+  }
+
+  .mobile-tight-card {
+    border-radius: 0.5rem;
+    padding: 1.1rem;
   }
 }
 
